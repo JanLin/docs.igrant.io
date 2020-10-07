@@ -57,7 +57,7 @@ run: ## Run user docs locally for development purposes
 	docker run \
 		$(CONTAINER_DEFAULT_RUN_FLAGS) \
 		--expose 5000 \
-		-e VIRTUAL_HOST=$(APP).$(PROJECT).dev \
+		-e VIRTUAL_HOST=user-docs.$(PROJECT).dev \
 		--name "${CONTAINER_USER_DOCS}" \
 		$(DOCKER_IMAGE):dev
 

@@ -18,13 +18,13 @@ module.exports = {
                 {
                     to: 'docs/',
                     activeBasePath: 'docs',
-                    label: 'MyData Operator',
+                    label: 'MyData Operator Services',
                     position: 'left',
                 },
                 {
                     to: 'docs/',
                     activeBasePath: 'docs',
-                    label: 'SSI',
+                    label: 'Self-Sovereign Identity Services',
                     position: 'left',
                 },
                 {
@@ -99,16 +99,14 @@ module.exports = {
             {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
-                    // Please change this to your repo.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/edit/master/website/',
+                        'https://github.com/L3-iGrant/docs.igrant.io/edit/master/docs/',
                 },
-                blog: {
-                    showReadingTime: true,
-                    // Please change this to your repo.
-                    editUrl:
-                        'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-                },
+                // blog: {
+                //     showReadingTime: true,
+                //     editUrl:
+                //         'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+                // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },

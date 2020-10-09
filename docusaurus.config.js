@@ -18,12 +18,18 @@ module.exports = {
                 {
                     to: 'docs/',
                     activeBasePath: 'docs',
+                    label: 'Intro',
+                    position: 'left',
+                },
+                {
+                    to: 'mydata-operator/',
+                    activeBasePath: 'mydata-operator',
                     label: 'MyData Operator Services',
                     position: 'left',
                 },
                 {
-                    to: 'docs/',
-                    activeBasePath: 'docs',
+                    to: 'ssi/',
+                    activeBasePath: 'ssi',
                     label: 'Self-Sovereign Identity Services',
                     position: 'left',
                 },
@@ -100,17 +106,50 @@ module.exports = {
                 docs: {
                     sidebarPath: require.resolve('./sidebars.js'),
                     editUrl:
-                        'https://github.com/L3-iGrant/docs.igrant.io/edit/master/docs/',
+                        'https://github.com/L3-iGrant/docs.igrant.io/edit/master/',
                 },
-                // blog: {
-                //     showReadingTime: true,
-                //     editUrl:
-                //         'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-                // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
                 },
             },
         ],
     ],
+    plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'community',
+                path: 'community',
+                editUrl: 'https://github.com/L3-iGrant/docs.igrant.io/edit/master/',
+                routeBasePath: 'community',
+                sidebarPath: require.resolve('./sidebars/sidebarsCommunity.js'),
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'mdoDocs',
+                path: 'mdoDocs',
+                editUrl: 'https://github.com/L3-iGrant/docs.igrant.io/edit/master/',
+                routeBasePath: 'mydata-operator',
+                sidebarPath: require.resolve('./sidebars/sidebarsMDO.js'),
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'ssiDocs',
+                path: 'ssiDocs',
+                editUrl: 'https://github.com/L3-iGrant/docs.igrant.io/edit/master/',
+                routeBasePath: 'ssi',
+                sidebarPath: require.resolve('./sidebars/sidebarsSSI.js'),
+                showLastUpdateAuthor: true,
+                showLastUpdateTime: true,
+            },
+        ]
+    ]
 };

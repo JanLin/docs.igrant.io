@@ -1,7 +1,7 @@
 ---
 id: doc1
-title: MyData Operator Documentation
-sidebar_label: MyData Operator Documentation
+title: MyData Operator User Guide
+sidebar_label: MyData Operator Services
 slug: /
 ---
 

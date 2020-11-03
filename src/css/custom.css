@@ -8,7 +8,7 @@
 /* You can override the default Infima variables here. */
 :root {
     --ifm-color-primary: #004a87;
-    --ifm-color-primary-dark: rgb(33, 175, 144);
+    --ifm-color-primary-dark: rgba(252, 252, 252, 0.404);
     --ifm-color-primary-darker: rgb(31, 165, 136);
     --ifm-color-primary-darkest: rgb(26, 136, 112);
     --ifm-color-primary-light: rgb(70, 203, 174);
@@ -16,6 +16,40 @@
     --ifm-color-primary-lightest: rgb(146, 224, 208);
     --ifm-code-font-size: 95%;
 }
+
+html[data-theme='dark'] .menu__link--active {
+    color: #ffffffd7;
+}
+
+.menu__link--active {
+    color: #141414;
+}
+
+.menu__link:hover {
+    color: #333333;
+}
+
+html[data-theme='dark'] a {
+    color: #ffffffa9;
+}
+
+.navbar {
+    background-color: #000000; 
+}
+
+.navbar__link {
+    color: #ffffff;
+}
+
+.navbar__link:hover {
+    color: #000000;
+    background: white;
+}
+
+.footer--dark {
+    --ifm-footer-background-color: #000000; 
+}
+
 
 .docusaurus-highlight-code-line {
     background-color: rgb(72, 77, 91);

@@ -1,3 +1,6 @@
 module.exports = {
-    someSidebar: ['mdo-main'],
+    someSidebar: {
+        "MyData Operator Services": ['mdo-main', 'mdo-edo', 'mdo-mobagents', 'mdo-pdd']
+    },
 };
+

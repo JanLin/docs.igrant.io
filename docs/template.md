@@ -1,8 +1,7 @@
 ---
-id: doc1
-title: MyData Operator User Guide
-sidebar_label: MyData Operator Services
-slug: /
+id: docx
+title: Template Example
+sidebar_label: Template example
 ---
 
 You can write content using [GitHub-flavored Markdown syntax](https://github.github.com/gfm/).

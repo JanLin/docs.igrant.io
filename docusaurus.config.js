@@ -12,13 +12,13 @@ module.exports = {
             title: '',
             logo: {
                 alt: 'iGrant.io Logo',
-                src: 'img/logo.png',
+                src: 'img/logo.svg',
             },
             items: [
                 {
                     to: 'docs/',
                     activeBasePath: 'docs',
-                    label: 'Intro',
+                    label: 'iGrant.io Platform',
                     position: 'left',
                 },
                 {
@@ -52,18 +52,18 @@ module.exports = {
                     title: 'Docs',
                     items: [
                         {
-                            label: 'Style Guide',
-                            to: 'docs/',
-                        },
-                        {
-                            label: 'Second Doc',
-                            to: 'docs/doc2/',
-                        },
+                            label: 'API Docs',
+                            to: 'https://developer.igrant.io/',
+                        }
                     ],
                 },
                 {
-                    title: 'Community',
+                    title: 'Follow us',
                     items: [
+                        {
+                            label: 'Linkedin',
+                            href: 'https://www.linkedin.com/company/igrantio',
+                        },
                         {
                             label: 'Twitter',
                             href: 'https://twitter.com/igrantio',
@@ -75,10 +75,6 @@ module.exports = {
                         {
                             label: 'Facebook',
                             href: 'https://www.facebook.com/igrantio/',
-                        },
-                        {
-                            label: 'Linkedin',
-                            href: 'https://twitter.com/igrantio',
                         },
                     ],
                 },
@@ -96,7 +92,7 @@ module.exports = {
                     ],
                 },
             ],
-            copyright: `Copyright © ${new Date().getFullYear()} LCubed AB, Sweden`,
+            copyright: `Copyright © 2017-${new Date().getFullYear()} LCubed AB, Sweden`,
         },
     },
     presets: [
@@ -104,7 +100,7 @@ module.exports = {
             '@docusaurus/preset-classic',
             {
                 docs: {
-                    sidebarPath: require.resolve('./sidebars.js'),
+                    sidebarPath: require.resolve('./sidebars/sidebarsIntro.js'),
                     editUrl:
                         'https://github.com/L3-iGrant/docs.igrant.io/edit/master/',
                 },
@@ -115,18 +111,6 @@ module.exports = {
         ],
     ],
     plugins: [
-        [
-            '@docusaurus/plugin-content-docs',
-            {
-                id: 'community',
-                path: 'community',
-                editUrl: 'https://github.com/L3-iGrant/docs.igrant.io/edit/master/',
-                routeBasePath: 'community',
-                sidebarPath: require.resolve('./sidebars/sidebarsCommunity.js'),
-                showLastUpdateAuthor: true,
-                showLastUpdateTime: true,
-            },
-        ],
         [
             '@docusaurus/plugin-content-docs',
             {

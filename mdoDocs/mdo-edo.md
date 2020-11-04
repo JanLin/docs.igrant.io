@@ -22,7 +22,7 @@ sidebar_label: Enterprise dashboard
 
 ## Account management
 
-## Developers
+## Developer
 
 ## Support events
 
